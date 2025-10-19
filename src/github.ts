@@ -83,7 +83,7 @@ interface GitHubCreateOptions {
   token?: string;
   logger?: Logger;
   proxy?: ProxyOption;
-  fetch?: any;
+  fetch?: any /* eslint-disable-line @typescript-eslint/no-explicit-any */;
 }
 
 type CommitFilter = (commit: Commit) => boolean;
